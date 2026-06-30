@@ -64,7 +64,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden container pt-4 pb-2 flex flex-col gap-4 animate-rise">
+        <div className="md:hidden container pt-4 pb-5 flex flex-col gap-4 bg-white shadow-[0_8px_24px_rgba(10,31,68,0.12)] rounded-b-2xl animate-rise">
           {links.map((l) => (
             <a
               key={l.href}
