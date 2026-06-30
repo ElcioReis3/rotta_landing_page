@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="topo"
-      className="relative overflow-hidden bg-navy-900 pt-32 pb-24 md:pt-44 md:pb-32"
+      className="relative overflow-hidden bg-navy-900 pt-28 pb-16 sm:pt-32 sm:pb-24 md:pt-44 md:pb-32"
     >
       {/* trama de rota - assinatura visual */}
       <svg
@@ -30,21 +30,18 @@ export default function Hero() {
       <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-flame-500/20 blur-3xl" />
       <div className="absolute top-1/3 -left-32 h-72 w-72 rounded-full bg-navy-500/30 blur-3xl" />
 
-      <div className="container relative grid lg:grid-cols-2 gap-16 items-center">
-        <div className="animate-rise">
+      <div className="container relative grid lg:grid-cols-2 gap-16 items-center min-w-0">
+        <div className="animate-rise min-w-0">
           <Badge variant="light" className="mb-6">
             <span className="h-1.5 w-1.5 rounded-full bg-flame-500" />
             Gás e água · Disponível para Android
           </Badge>
 
-          <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.05] text-white text-balance">
-            Gás, água e muito mais
+          <h1 className="font-display font-extrabold text-[2rem] sm:text-5xl lg:text-[3.4rem] leading-[1.1] text-white text-balance">
+            Gás, água e muito mais{" "}
             <span className="relative inline-block px-1">
-              <span className="relative z-10 text-flame-500">
-                {" "}
-                na sua porta
-              </span>
-            </span>
+              <span className="relative z-10 text-flame-500">na sua porta</span>
+            </span>{" "}
             em poucos toques
           </h1>
 
@@ -54,7 +51,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">
-            <Button size="lg" asChild>
+            <Button size="lg" asChild className="w-full sm:w-auto">
               <a href="#download">
                 <Download className="h-5 w-5" />
                 Baixar o app agora
@@ -63,7 +60,7 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white/20 text-white hover:bg-white/5 hover:border-white/40"
+              className="w-full sm:w-auto border-white/20 text-white hover:bg-white/5 hover:border-white/40"
               asChild
             >
               <a href="#como-funciona">Ver como funciona</a>
@@ -92,15 +89,15 @@ export default function Hero() {
         <div className="relative flex justify-center lg:justify-end animate-rise [animation-delay:150ms]">
           <div className="relative">
             <div className="absolute inset-0 scale-110 rounded-[3rem] bg-gradient-to-br from-flame-500/30 to-transparent blur-2xl" />
-            <div className="relative h-[420px] w-[420px] sm:h-[480px] sm:w-[480px] rounded-[3rem] bg-gradient-to-br from-navy-700 to-navy-900 border border-white/10 shadow-2xl flex items-center justify-center animate-float">
+            <div className="relative h-[78vw] w-[78vw] max-h-[420px] max-w-[420px] sm:h-[420px] sm:w-[420px] lg:h-[480px] lg:w-[480px] rounded-[3rem] bg-gradient-to-br from-navy-700 to-navy-900 border border-white/10 shadow-2xl flex items-center justify-center animate-float">
               <img
                 src={appIcon}
                 alt="Ícone do RottaGás+, botijão com chama"
-                className="h-56 w-56 sm:h-64 sm:w-64 animate-flicker drop-shadow-[0_20px_40px_rgba(255,138,0,0.35)]"
+                className="h-[42vw] w-[42vw] max-h-56 max-w-56 sm:h-56 sm:w-56 lg:h-64 lg:w-64 animate-flicker drop-shadow-[0_20px_40px_rgba(255,138,0,0.35)]"
               />
             </div>
 
-            <div className="absolute -bottom-6 -left-10 bg-white rounded-2xl shadow-navy px-5 py-4 flex items-center gap-3 animate-rise [animation-delay:400ms]">
+            <div className="absolute -bottom-5 left-2 sm:-bottom-6 sm:-left-10 bg-white rounded-2xl shadow-navy px-4 py-3 sm:px-5 sm:py-4 flex items-center gap-3 animate-rise [animation-delay:400ms] max-w-[calc(100%-1rem)]">
               <div className="h-10 w-10 rounded-full bg-flame-50 flex items-center justify-center">
                 <MapPin className="h-5 w-5 text-flame-500" />
               </div>

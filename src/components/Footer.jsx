@@ -74,19 +74,13 @@ export default function Footer() {
             </ul>
             <div className="flex items-center gap-3 mt-5">
               <a
-                href="#"
+                href="https://www.instagram.com/elcioreis_cx/"
                 aria-label="Instagram"
                 className="h-9 w-9 rounded-full bg-white/5 hover:bg-flame-500 transition-colors flex items-center justify-center"
               >
                 <AtSign className="h-4 w-4 text-white" />
               </a>
-              <a
-                href="#"
-                aria-label="Redes sociais"
-                className="h-9 w-9 rounded-full bg-white/5 hover:bg-flame-500 transition-colors flex items-center justify-center"
-              >
-                <Share2 className="h-4 w-4 text-white" />
-              </a>
+              <p className="text-white text-sm">Instagram</p>
             </div>
           </div>
         </div>
