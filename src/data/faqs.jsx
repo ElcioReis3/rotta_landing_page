@@ -21,7 +21,7 @@ export const ListFaqs = [
   },
   {
     q: "Quais tipos de produtos posso pedir no app?",
-    a: "Quatro categorias: Água e Gás (botijões e galões), Pet Peso Pesado (ração, areia e tapetes higiênicos em grande volume), Limpeza Atacado (galões concentrados e fardos de papel) e Lazer e Quintal (carvão, lenha, terra vegetal e produtos para piscina).",
+    a: "Quatro categorias: Água e Gás (botijões e galões), Pet Peso Pesado (ração, areia e tapetes higiênicos em grande volume), Limpeza Atacado (galões concentrados e fardos de papel) e Lazer e Quintal (carvão, terra vegetal e produtos para piscina).",
   },
   {
     q: "Quem faz as entregas?",

@@ -1,4 +1,10 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   ShoppingCart,
@@ -19,13 +25,13 @@ const features = [
   },
   {
     icon: MapPinned,
-    title: "Acompanhamento em tempo real",
+    title: "Acompanhamento do status do pedido",
     desc: "Veja o entregador da própria distribuidora se aproximar no mapa, do momento em que sai até a sua porta.",
   },
   {
     icon: Wallet,
     title: "Sistema de créditos",
-    desc: "Compre créditos uma vez e use em vários pedidos. O saldo é debitado automaticamente a cada entrega confirmada.",
+    desc: "Compre créditos uma vez e use em vários pedidos.",
   },
   {
     icon: Tag,
@@ -59,7 +65,9 @@ export default function Features() {
     <section id="recursos" className="py-24 md:py-32 bg-mist relative">
       <div className="container">
         <div className="max-w-xl mx-auto text-center mb-16">
-          <Badge variant="flame" className="mb-4">Recursos</Badge>
+          <Badge variant="flame" className="mb-4">
+            Recursos
+          </Badge>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy-900 text-balance">
             Tudo o que você precisa para nunca carregar peso sozinho
           </h2>

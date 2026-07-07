@@ -49,8 +49,7 @@ export default function Hero() {
           <p className="mt-6 text-lg text-white/65 max-w-md leading-relaxed">
             O RottaCarga+ conecta você às distribuidoras da sua região para
             entregar tudo o que é pesado, denso ou volumoso: gás, água, ração,
-            produtos de limpeza e itens de quintal. Sem carregar peso, sem
-            depender do seu carro.
+            carvão e produtos de limpeza.
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">
@@ -84,7 +83,7 @@ export default function Hero() {
             <div className="h-4 w-px bg-white/15" />
             <div className="flex items-center gap-1.5 text-sm font-semibold">
               <MapPin className="h-4 w-4 text-flame-500" />
-              Entrega rastreada em tempo real
+              Entrega rastreada
             </div>
           </div>
         </div>
@@ -106,10 +105,10 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-xs text-navy-900/50 font-semibold">
-                  Chegando em
+                  Entregas de
                 </p>
                 <p className="text-sm font-display font-bold text-navy-900">
-                  12 minutos
+                  15 até 30 minutos
                 </p>
               </div>
             </div>

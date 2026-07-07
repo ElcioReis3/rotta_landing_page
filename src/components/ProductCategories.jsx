@@ -6,25 +6,37 @@ const categories = [
     icon: Droplets,
     title: "Água e Gás",
     desc: "A base do app: botijões de 13kg e galões de água mineral de 20L, do jeito que você já conhece.",
-    items: ["Botijão de gás 13kg", "Galão de água 20L"],
+    items: ["Botijão de gás de 2kg a 45kg", "Galão de água de 10L a 20L"],
   },
   {
     icon: PawPrint,
     title: "Pet Peso Pesado",
     desc: "Sacos grandes de ração, areia higiênica e tapetes — sem precisar carregar peso até o carro.",
-    items: ["Ração de 10kg a 20kg", "Fardos de areia higiênica", "Caixas de tapetes higiênicos"],
+    items: [
+      "Ração de 10kg a 20kg",
+      "Fardos de areia higiênica",
+      "Caixas de tapetes higiênicos",
+    ],
   },
   {
     icon: SprayCan,
     title: "Limpeza Atacado",
     desc: "Produtos concentrados em galões de 5 litros e fardos de papel de alta volumetria, para casa cheia de estoque.",
-    items: ["Galões de 5L concentrados", "Fardos de papel"],
+    items: [
+      "Galões de 5L concentrados",
+      "Fardos de produtos de limpeza",
+      "Fardos de papel",
+    ],
   },
   {
     icon: Trees,
     title: "Lazer e Quintal",
-    desc: "Carvão, lenha, terra vegetal e o que mais o seu quintal e sua piscina precisam, entregue na porta.",
-    items: ["Carvão 5kg a 10kg e lenha ecológica", "Terra vegetal e adubo", "Sal e cloro para piscina"],
+    desc: "Carvão, terra vegetal e o que mais o seu quintal e sua piscina precisam, entregue na porta.",
+    items: [
+      "Carvão 5kg a 20kg",
+      "Terra vegetal e adubo",
+      "Sal e cloro para piscina",
+    ],
   },
 ];
 
