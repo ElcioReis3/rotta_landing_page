@@ -8,14 +8,14 @@ export default function CylinderSizes() {
       <div className="container">
         <div className="max-w-xl mx-auto text-center mb-16">
           <Badge variant="flame" className="mb-4">
-            Linha de gás
+            Água e Gás
           </Badge>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy-900 text-balance">
             Todos os tamanhos de botijão em um só lugar
           </h2>
           <p className="mt-4 text-navy-900/60 leading-relaxed">
             Do uso doméstico ao comercial, peça o botijão certo para sua
-            necessidade.
+            necessidade — e o galão de água de 20L junto, sem esforço.
           </p>
         </div>
 

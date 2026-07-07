@@ -9,12 +9,13 @@ export default function Footer() {
           <div>
             <img
               src={logoHorizontal}
-              alt="RottaGás+"
+              alt="RottaCarga+"
               className="h-9 w-auto mb-5 brightness-0 invert"
             />
             <p className="text-sm text-white/45 leading-relaxed max-w-xs">
-              Conectando clientes, entregadores e distribuidoras de gás e água
-              em um só aplicativo. Peça com confiança, receba com agilidade.
+              A plataforma que leva o peso por você. Gás, água, ração,
+              produtos de limpeza e itens de quintal, entregues por
+              distribuidoras da sua região com sua própria equipe.
             </p>
           </div>
 
@@ -45,6 +46,14 @@ export default function Footer() {
                   className="hover:text-flame-500 transition-colors"
                 >
                   Para quem é
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#categorias"
+                  className="hover:text-flame-500 transition-colors"
+                >
+                  Categorias
                 </a>
               </li>
               <li>
@@ -90,7 +99,7 @@ export default function Footer() {
           <a href="https://www.elcioserviçoson.com.br">ÉlcioServiçosOn</a>
         </p>
         <p className="pt-4 text-center text-xs text-white/30">
-          © {new Date().getFullYear()} RottaGás+. Todos os direitos reservados.
+          © {new Date().getFullYear()} RottaCarga+. Todos os direitos reservados.
         </p>
       </div>
     </footer>

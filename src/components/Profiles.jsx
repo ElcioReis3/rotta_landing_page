@@ -5,20 +5,20 @@ const profiles = [
   {
     icon: User,
     title: "Para clientes",
-    desc: "Peça gás e água sem sair de casa, acompanhe a entrega e pague do jeito mais fácil para você.",
+    desc: "Peça o que for pesado ou volumoso sem sair de casa, acompanhe a entrega e pague do jeito mais fácil para você.",
     items: ["Pedido em poucos toques", "Rastreamento em tempo real", "Histórico de pedidos e créditos"],
   },
   {
     icon: Bike,
-    title: "Para entregadores",
-    desc: "Receba pedidos próximos, organize sua rota e tenha controle total das suas entregas do dia.",
-    items: ["Rotas otimizadas", "Confirmação de entrega no app", "Acompanhamento de ganhos"],
+    title: "Para a equipe de entrega",
+    desc: "Cada distribuidora tem sua própria equipe de entregadores, organizada dentro do app — sem frota externa ou autônomos avulsos.",
+    items: ["Rotas otimizadas", "Confirmação de entrega no app", "Acompanhamento de entregas do dia"],
   },
   {
     icon: Building2,
     title: "Para distribuidoras",
-    desc: "Gerencie pedidos, estoque e equipe de entrega em um painel pensado para o seu negócio crescer.",
-    items: ["Painel de gestão completo", "Controle de entregadores", "Relatórios de vendas"],
+    desc: "Um painel administrativo próprio, whitelabel, para gerenciar produtos, clientes, rotas e a sua equipe de entregadores.",
+    items: ["Painel de gestão completo", "Controle da própria equipe de entrega", "Relatórios de vendas"],
   },
 ];
 

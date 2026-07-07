@@ -34,20 +34,22 @@ export default function Hero() {
         <div className="animate-rise min-w-0">
           <Badge variant="light" className="mb-6">
             <span className="h-1.5 w-1.5 rounded-full bg-flame-500" />
-            Gás e água · Disponível para Android
+            Logística Big &amp; Bulky · Disponível para Android
           </Badge>
 
           <h1 className="font-display font-extrabold text-[2rem] sm:text-5xl lg:text-[3.4rem] leading-[1.1] text-white text-balance">
-            Gás, água e muito mais{" "}
+            Nós levamos{" "}
             <span className="relative inline-block px-1">
-              <span className="relative z-10 text-flame-500">na sua porta</span>
+              <span className="relative z-10 text-flame-500">o peso</span>
             </span>{" "}
-            em poucos toques
+            por você
           </h1>
 
           <p className="mt-6 text-lg text-white/65 max-w-md leading-relaxed">
-            O RottaGás+ conecta você às melhores distribuidoras da sua região.
-            Peça, acompanhe seu pedido — tudo em um único aplicativo.
+            O RottaCarga+ conecta você às distribuidoras da sua região para
+            entregar tudo o que é pesado, denso ou volumoso: gás, água, ração,
+            produtos de limpeza e itens de quintal. Sem carregar peso, sem
+            depender do seu carro.
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">
@@ -92,7 +94,7 @@ export default function Hero() {
             <div className="relative h-[78vw] w-[78vw] max-h-[420px] max-w-[420px] sm:h-[420px] sm:w-[420px] lg:h-[480px] lg:w-[480px] rounded-[3rem] bg-gradient-to-br from-navy-700 to-navy-900 border border-white/10 shadow-2xl flex items-center justify-center animate-float">
               <img
                 src={appIcon}
-                alt="Ícone do RottaGás+, botijão com chama"
+                alt="Ícone do RottaCarga+"
                 className="h-[42vw] w-[42vw] max-h-56 max-w-56 sm:h-56 sm:w-56 lg:h-64 lg:w-64 animate-flicker drop-shadow-[0_20px_40px_rgba(255,138,0,0.35)]"
               />
             </div>

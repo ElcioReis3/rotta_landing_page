@@ -7,20 +7,20 @@ import {
   ShieldCheck,
   Tag,
   Bell,
-  CreditCard,
-  Clock,
+  PackageSearch,
+  Truck,
 } from "lucide-react";
 
 const features = [
   {
     icon: ShoppingCart,
     title: "Pedido em poucos toques",
-    desc: "Escolha o produto, a quantidade e a distribuidora mais próxima. Sem ligação, sem espera.",
+    desc: "Escolha o produto, a quantidade e a distribuidora mais próxima. Sem ligação, sem esforço físico, sem carregar peso.",
   },
   {
     icon: MapPinned,
     title: "Acompanhamento em tempo real",
-    desc: "Veja o entregador se aproximar no mapa, do momento em que sai da distribuidora até a sua porta.",
+    desc: "Veja o entregador da própria distribuidora se aproximar no mapa, do momento em que sai até a sua porta.",
   },
   {
     icon: Wallet,
@@ -40,7 +40,17 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Distribuidoras verificadas",
-    desc: "Trabalhamos só com fornecedores avaliados, para sua entrega chegar com segurança.",
+    desc: "Cada distribuidora parceira tem seu próprio painel de gestão e sua própria equipe de entrega, sem frota externa.",
+  },
+  {
+    icon: PackageSearch,
+    title: "Catálogo big & bulky",
+    desc: "Água e gás, ração pesada, produtos de limpeza no atacado e itens de quintal — tudo organizado por categoria.",
+  },
+  {
+    icon: Truck,
+    title: "Sem depender do seu carro",
+    desc: "Chega de recusa de corrida por carga pesada ou suja. A entrega é feita por quem já é especialista em transportar volume.",
   },
 ];
 
@@ -51,11 +61,11 @@ export default function Features() {
         <div className="max-w-xl mx-auto text-center mb-16">
           <Badge variant="flame" className="mb-4">Recursos</Badge>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy-900 text-balance">
-            Tudo o que você precisa para nunca ficar sem gás
+            Tudo o que você precisa para nunca carregar peso sozinho
           </h2>
           <p className="mt-4 text-navy-900/60 leading-relaxed">
             Um aplicativo pensado do pedido à entrega, com a confiança de quem
-            entende de logística e atendimento.
+            entende de logística de itens pesados e volumosos.
           </p>
         </div>
 

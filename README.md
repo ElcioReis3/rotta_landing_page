@@ -1,7 +1,8 @@
-# RottaGás+ — Landing Page
+# RottaCarga+ — Landing Page
 
-Landing page apresentacional do app RottaGás+, com a função de página de
-download (APK), construída em React + Tailwind CSS + shadcn/ui.
+Landing page apresentacional do app RottaCarga+ ("Nós levamos o peso por
+você"), com a função de página de download (APK), construída em React +
+Tailwind CSS + shadcn/ui.
 
 ## Como rodar localmente
 
@@ -27,7 +28,8 @@ serviço de site estático (Vercel, Netlify, hospedagem própria, etc).
 - `src/components/Hero.jsx` — seção de abertura com CTA principal
 - `src/components/Features.jsx` — recursos do app
 - `src/components/HowItWorks.jsx` — passo a passo do fluxo de pedido
-- `src/components/Profiles.jsx` — perfis (cliente / entregador / distribuidora)
+- `src/components/Profiles.jsx` — perfis (cliente / equipe de entrega / distribuidora)
+- `src/components/ProductCategories.jsx` — as 4 categorias (Água e Gás, Pet Peso Pesado, Limpeza Atacado, Lazer e Quintal)
 - `src/components/CylinderSizes.jsx` — tamanhos de botijão disponíveis
 - `src/components/DownloadCTA.jsx` — seção de download do APK
 - `src/components/FAQ.jsx` — perguntas frequentes

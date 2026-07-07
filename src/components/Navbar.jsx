@@ -5,6 +5,7 @@ import { Menu, X, Download } from "lucide-react";
 
 const links = [
   { label: "Como funciona", href: "#como-funciona" },
+  { label: "Categorias", href: "#categorias" },
   { label: "Recursos", href: "#recursos" },
   { label: "Para quem é", href: "#perfis" },
   { label: "Dúvidas", href: "#faq" },
@@ -30,7 +31,7 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between">
         <a href="#topo" className="flex items-center">
-          <img src={logoHorizontal} alt="RottaGás+" className="h-9 w-auto" />
+          <img src={logoHorizontal} alt="RottaCarga+" className="h-9 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

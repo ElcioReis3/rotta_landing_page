@@ -12,7 +12,7 @@ export const ListFaqs = [
     a: "Sim. O app mostra as distribuidoras disponíveis na sua região, com avaliação e tempo estimado de entrega, para você escolher a melhor opção.",
   },
   {
-    q: "O RottaGás+ funciona em qual sistema?",
+    q: "O RottaCarga+ funciona em qual sistema?",
     a: "Atualmente o app está disponível para dispositivos Android, com instalação direta do arquivo APK.",
   },
   {
@@ -20,11 +20,15 @@ export const ListFaqs = [
     a: "O app envia notificações em cada etapa do pedido: confirmação, saída para entrega e chegada — assim você sabe exatamente quando esperar.",
   },
   {
-    q: "O app também atende distribuidoras de água?",
-    a: "Sim. Além do gás, o RottaGás+ conecta você a distribuidoras de água da sua região, com pedido de galões pelo mesmo aplicativo e o mesmo saldo de créditos.",
+    q: "Quais tipos de produtos posso pedir no app?",
+    a: "Quatro categorias: Água e Gás (botijões e galões), Pet Peso Pesado (ração, areia e tapetes higiênicos em grande volume), Limpeza Atacado (galões concentrados e fardos de papel) e Lazer e Quintal (carvão, lenha, terra vegetal e produtos para piscina).",
   },
   {
-    q: "Sou entregador ou distribuidora, como participo?",
-    a: "Dentro do app há perfis específicos para entregadores e para distribuidoras, com cadastro próprio e painel de gestão de pedidos, rotas e equipe.",
+    q: "Quem faz as entregas?",
+    a: "Cada distribuidora parceira tem sua própria equipe de entregadores, cadastrada e gerenciada dentro do próprio app. Não existe frota externa nem entregadores autônomos avulsos.",
+  },
+  {
+    q: "Sou dono de uma distribuidora, como participo?",
+    a: "O RottaCarga+ funciona como uma plataforma whitelabel: cada distribuidora recebe seu próprio painel administrativo para gerenciar produtos, clientes, rotas e a sua equipe de entrega.",
   },
 ];

@@ -13,7 +13,7 @@ export default function HowItWorks() {
             Como funciona
           </Badge>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy-900 text-balance">
-            Da sua tela até a sua porta, em quatro passos
+            Da sua tela até a sua porta, sem carregar peso, em quatro passos
           </h2>
         </div>
 

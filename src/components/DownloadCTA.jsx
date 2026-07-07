@@ -25,16 +25,16 @@ export default function DownloadCTA() {
         <div className="max-w-2xl mx-auto text-center">
           <img
             src={appIcon}
-            alt="RottaGás+"
+            alt="RottaCarga+"
             className="h-20 w-20 mx-auto mb-8 animate-flicker"
           />
 
           <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white text-balance">
-            Baixe agora e peça seu gás em minutos
+            Baixe agora e nunca mais carregue peso sozinho
           </h2>
           <p className="mt-5 text-white/60 text-lg leading-relaxed">
-            Gratuito, rápido de instalar e pronto para usar. Disponível para
-            dispositivos Android.
+            RottaCarga+ | Nós levamos o peso por você. Gratuito, rápido de
+            instalar e pronto para usar. Disponível para dispositivos Android.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
