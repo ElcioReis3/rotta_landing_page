@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Download, Star, MapPin } from "lucide-react";
 import appIcon from "@/assets/img/app-icon.png";
+import appIconDark from "@/assets/img/app-icon-dark.png";
 
 export default function Hero() {
   return (
@@ -93,7 +94,7 @@ export default function Hero() {
             <div className="absolute inset-0 scale-110 rounded-[3rem] bg-gradient-to-br from-flame-500/30 to-transparent blur-2xl" />
             <div className="relative h-[78vw] w-[78vw] max-h-[420px] max-w-[420px] sm:h-[420px] sm:w-[420px] lg:h-[480px] lg:w-[480px] rounded-[3rem] bg-gradient-to-br from-navy-700 to-navy-900 border border-white/10 shadow-2xl flex items-center justify-center animate-float">
               <img
-                src={appIcon}
+                src={appIconDark}
                 alt="Ícone do RottaCarga+"
                 className="h-[42vw] w-[42vw] max-h-56 max-w-56 sm:h-56 sm:w-56 lg:h-64 lg:w-64 animate-flicker drop-shadow-[0_20px_40px_rgba(255,138,0,0.35)]"
               />

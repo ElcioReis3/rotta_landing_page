@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Download, Smartphone, ShieldCheck, Zap } from "lucide-react";
 import appIcon from "@/assets/img/app-icon.png";
+import appIconDark from "@/assets/img/app-icon-dark.png";
 
 export default function DownloadCTA() {
   return (
-    <section id="download" className="relative py-24 md:py-32 bg-navy-900 overflow-hidden">
+    <section
+      id="download"
+      className="relative py-24 md:py-32 bg-navy-900 overflow-hidden"
+    >
       <svg
         className="absolute inset-0 w-full h-full opacity-[0.15]"
         viewBox="0 0 1280 600"
@@ -24,7 +28,7 @@ export default function DownloadCTA() {
       <div className="container relative">
         <div className="max-w-2xl mx-auto text-center">
           <img
-            src={appIcon}
+            src={appIconDark}
             alt="RottaCarga+"
             className="h-20 w-20 mx-auto mb-8 animate-flicker"
           />
@@ -51,22 +55,30 @@ export default function DownloadCTA() {
             <div className="flex items-start gap-3 rounded-xl bg-white/[0.04] border border-white/10 p-5">
               <Zap className="h-5 w-5 text-flame-500 shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-bold text-white">Instalação rápida</p>
-                <p className="text-xs text-white/50 mt-1">Pronto para usar em menos de 2 minutos.</p>
+                <p className="text-sm font-bold text-white">
+                  Instalação rápida
+                </p>
+                <p className="text-xs text-white/50 mt-1">
+                  Pronto para usar em menos de 2 minutos.
+                </p>
               </div>
             </div>
             <div className="flex items-start gap-3 rounded-xl bg-white/[0.04] border border-white/10 p-5">
               <ShieldCheck className="h-5 w-5 text-flame-500 shrink-0 mt-0.5" />
               <div>
                 <p className="text-sm font-bold text-white">Seguro</p>
-                <p className="text-xs text-white/50 mt-1">Pagamentos e dados protegidos de ponta a ponta.</p>
+                <p className="text-xs text-white/50 mt-1">
+                  Pagamentos e dados protegidos de ponta a ponta.
+                </p>
               </div>
             </div>
             <div className="flex items-start gap-3 rounded-xl bg-white/[0.04] border border-white/10 p-5">
               <Smartphone className="h-5 w-5 text-flame-500 shrink-0 mt-0.5" />
               <div>
                 <p className="text-sm font-bold text-white">Leve</p>
-                <p className="text-xs text-white/50 mt-1">Ocupa pouco espaço, funciona em qualquer Android.</p>
+                <p className="text-xs text-white/50 mt-1">
+                  Ocupa pouco espaço, funciona em qualquer Android.
+                </p>
               </div>
             </div>
           </div>
