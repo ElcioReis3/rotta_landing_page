@@ -70,9 +70,15 @@ export default function DownloadCTA() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto text-base h-16 px-10">
-              <Download className="h-5 w-5" />
-              Baixar APK — Android
+            <Button
+              size="lg"
+              asChild
+              className="w-full sm:w-auto text-base h-16 px-10"
+            >
+              <a href="/downloads/rotta-carga-plus.apk" download>
+                <Download className="h-5 w-5" />
+                Baixar APK — Android
+              </a>
             </Button>
           </div>
           <p className="mt-4 text-xs text-white/40">
