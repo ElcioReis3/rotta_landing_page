@@ -1,7 +1,35 @@
 import { Button } from "@/components/ui/button";
-import { Download, Smartphone, ShieldCheck, Zap } from "lucide-react";
+import {
+  Download,
+  Smartphone,
+  ShieldCheck,
+  Zap,
+  Play,
+  Apple,
+  Monitor,
+  Sparkles,
+  Clock,
+} from "lucide-react";
 import appIcon from "@/assets/img/app-icon.png";
 import appIconDark from "@/assets/img/app-icon-dark.png";
+
+const comingSoon = [
+  {
+    icon: Play,
+    title: "Google Play Store",
+    desc: "Instalação e atualizações automáticas direto da loja oficial do Android.",
+  },
+  {
+    icon: Apple,
+    title: "Apple App Store",
+    desc: "Versão para iPhone e iPad, com a mesma experiência do app Android.",
+  },
+  {
+    icon: Monitor,
+    title: "Versão desktop para administradores",
+    desc: "Painel para computador, pensado para distribuidoras gerenciarem pedidos, equipe e relatórios em tela grande.",
+  },
+];
 
 export default function DownloadCTA() {
   return (
@@ -81,6 +109,56 @@ export default function DownloadCTA() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* EM BREVE */}
+          <div className="mt-8 rounded-2xl bg-white/[0.04] border border-white/10 p-7 md:p-9 text-left">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:justify-between mb-7">
+              <div className="flex items-center gap-3">
+                <span className="h-11 w-11 rounded-xl bg-flame-500 flex items-center justify-center shrink-0">
+                  <Sparkles className="h-5 w-5 text-white" />
+                </span>
+                <div>
+                  <p className="font-display font-bold text-lg text-white leading-tight">
+                    Em breve, em todo lugar
+                  </p>
+                  <p className="text-xs text-white/45 mt-0.5">
+                    Novas versões do RottaCarga+ já estão a caminho
+                  </p>
+                </div>
+              </div>
+              <span className="inline-flex items-center gap-1.5 self-start sm:self-auto rounded-full bg-flame-500/15 px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-flame-400">
+                <Clock className="h-3.5 w-3.5" />
+                Em desenvolvimento
+              </span>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-4">
+              {comingSoon.map((c, i) => (
+                <div
+                  key={c.title}
+                  className="relative rounded-xl bg-white/[0.03] border border-white/10 p-5 hover:bg-white/[0.06] transition-colors duration-300 animate-rise"
+                  style={{ animationDelay: `${i * 90}ms` }}
+                >
+                  <span className="absolute top-4 right-4 rounded-full bg-white/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider text-white/60">
+                    Em breve
+                  </span>
+                  <c.icon className="h-6 w-6 text-flame-500 mb-4" />
+                  <p className="text-sm font-bold text-white leading-snug pr-16">
+                    {c.title}
+                  </p>
+                  <p className="text-xs text-white/50 mt-2 leading-relaxed">
+                    {c.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-6 text-xs text-white/40 leading-relaxed">
+              Enquanto isso, o APK acima já entrega a experiência completa do app
+              no Android. Quem instalar agora recebe as atualizações assim que as
+              novas versões forem publicadas.
+            </p>
           </div>
         </div>
       </div>

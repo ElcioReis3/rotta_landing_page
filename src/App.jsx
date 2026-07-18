@@ -1,28 +1,24 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import HowItWorks from "@/components/HowItWorks";
-import Profiles from "@/components/Profiles";
-import ProductCategories from "@/components/ProductCategories";
-import CylinderSizes from "@/components/CylinderSizes";
-import DownloadCTA from "@/components/DownloadCTA";
-import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import Home from "@/pages/Home";
+import Sobre from "@/pages/Sobre";
+import { usePath } from "@/router";
 
 export default function App() {
+  const path = usePath();
+
+  useEffect(() => {
+    document.title =
+      path === "/sobre"
+        ? "Quem está por trás do RottaCarga+ | Élcio Reis"
+        : "RottaCarga+ | Nós levamos o peso por você";
+  }, [path]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <Profiles />
-        <ProductCategories />
-        <CylinderSizes />
-        <DownloadCTA />
-        <FAQ />
-      </main>
+      {path === "/sobre" ? <Sobre /> : <Home />}
       <Footer />
     </div>
   );

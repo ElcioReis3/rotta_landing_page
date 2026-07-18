@@ -1,5 +1,6 @@
 import logoHorizontal from "@/assets/img/logo-horizontal.png";
-import { AtSign, Share2, Mail, Phone } from "lucide-react";
+import { AtSign, Mail, Phone, UserRound } from "lucide-react";
+import { Link } from "@/router";
 
 export default function Footer() {
   return (
@@ -13,9 +14,9 @@ export default function Footer() {
               className="h-9 w-auto mb-5 brightness-0 invert"
             />
             <p className="text-sm text-white/45 leading-relaxed max-w-xs">
-              A plataforma que leva o peso por você. Gás, água, ração,
-              produtos de limpeza e itens de quintal, entregues por
-              distribuidoras da sua região com sua própria equipe.
+              A plataforma que leva o peso por você. Gás, água, ração, produtos
+              de limpeza e itens de quintal, entregues por distribuidoras da sua
+              região com sua própria equipe.
             </p>
           </div>
 
@@ -25,44 +26,53 @@ export default function Footer() {
             </p>
             <ul className="space-y-3 text-sm text-white/60">
               <li>
-                <a
-                  href="#como-funciona"
+                <Link
+                  to="/#como-funciona"
                   className="hover:text-flame-500 transition-colors"
                 >
                   Como funciona
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#recursos"
+                <Link
+                  to="/#recursos"
                   className="hover:text-flame-500 transition-colors"
                 >
                   Recursos
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#perfis"
+                <Link
+                  to="/#perfis"
                   className="hover:text-flame-500 transition-colors"
                 >
                   Para quem é
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#categorias"
+                <Link
+                  to="/#categorias"
                   className="hover:text-flame-500 transition-colors"
                 >
                   Categorias
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#faq"
+                <Link
+                  to="/#faq"
                   className="hover:text-flame-500 transition-colors"
                 >
                   Dúvidas
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/sobre"
+                  className="hover:text-flame-500 transition-colors inline-flex items-center gap-1.5"
+                >
+                  <UserRound className="h-3.5 w-3.5" />
+                  Sobre o criador
+                </Link>
               </li>
             </ul>
           </div>
@@ -84,6 +94,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mt-5">
               <a
                 href="https://www.instagram.com/elcioreis_cx/"
+                target="_blank"
                 aria-label="Instagram"
                 className="h-9 w-9 rounded-full bg-white/5 hover:bg-flame-500 transition-colors flex items-center justify-center"
               >
@@ -99,7 +110,8 @@ export default function Footer() {
           <a href="https://www.elcioserviçoson.com.br">ÉlcioServiçosOn</a>
         </p>
         <p className="pt-4 text-center text-xs text-white/30">
-          © {new Date().getFullYear()} RottaCarga+. Todos os direitos reservados.
+          © {new Date().getFullYear()} RottaCarga+. Todos os direitos
+          reservados.
         </p>
       </div>
     </footer>
