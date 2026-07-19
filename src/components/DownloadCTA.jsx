@@ -75,7 +75,10 @@ export default function DownloadCTA() {
               asChild
               className="w-full sm:w-auto text-base h-16 px-10"
             >
-              <a href="/downloads/rotta-carga-plus.apk" download>
+              <a
+                href="https://github.com/ElcioReis3/rotta-carga-plus-releases/releases/download/v1.0.0/app-release.apk"
+                download
+              >
                 <Download className="h-5 w-5" />
                 Baixar APK — Android
               </a>
@@ -161,9 +164,9 @@ export default function DownloadCTA() {
             </div>
 
             <p className="mt-6 text-xs text-white/40 leading-relaxed">
-              Enquanto isso, o APK acima já entrega a experiência completa do app
-              no Android. Quem instalar agora recebe as atualizações assim que as
-              novas versões forem publicadas.
+              Enquanto isso, o APK acima já entrega a experiência completa do
+              app no Android. Quem instalar agora recebe as atualizações assim
+              que as novas versões forem publicadas.
             </p>
           </div>
         </div>
