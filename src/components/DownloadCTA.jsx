@@ -76,7 +76,7 @@ export default function DownloadCTA() {
               className="w-full sm:w-auto text-base h-16 px-10"
             >
               <a
-                href="https://github.com/ElcioReis3/rotta-carga-plus-releases/releases/download/v.1.0.1/app-rotta-carga-plus.apk"
+                href="https://github.com/ElcioReis3/rotta-carga-plus-releases/releases/download/v.1.0.2/app-rotta-carga-plus.apk"
                 download
               >
                 <Download className="h-5 w-5" />
