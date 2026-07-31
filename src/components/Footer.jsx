@@ -1,5 +1,5 @@
 import logoHorizontal from "@/assets/img/logo-horizontal.png";
-import { AtSign, Mail, Phone, UserRound } from "lucide-react";
+import { AtSign, Mail, Phone, UserRound, Building2 } from "lucide-react";
 import { Link } from "@/router";
 
 export default function Footer() {
@@ -72,6 +72,15 @@ export default function Footer() {
                 >
                   <UserRound className="h-3.5 w-3.5" />
                   Sobre o criador
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/distribuidores"
+                  className="hover:text-flame-500 transition-colors inline-flex items-center gap-1.5"
+                >
+                  <Building2 className="h-3.5 w-3.5" />
+                  Seja um distribuidor
                 </Link>
               </li>
             </ul>

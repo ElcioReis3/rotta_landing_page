@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import logoHorizontal from "@/assets/img/logo-horizontal.png";
-import { Menu, X, Download, UserRound } from "lucide-react";
+import { Menu, X, Download, UserRound, Building2 } from "lucide-react";
 import { Link, usePath } from "@/router";
 
 const links = [
@@ -12,11 +12,16 @@ const links = [
   { label: "Dúvidas", to: "/#faq" },
 ];
 
+// Páginas internas com hero em fundo escuro — o header precisa ficar claro
+// sobre elas enquanto não houver scroll, senão o texto branco do hero some
+// contra o fundo branco do header.
+const darkHeroPages = ["/sobre", "/distribuidores"];
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const path = usePath();
-  const isSobre = path === "/sobre";
+  const isDarkHero = darkHeroPages.includes(path);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -41,7 +46,7 @@ export default function Navbar() {
             src={logoHorizontal}
             alt="RottaCarga+"
             className={`h-9 w-auto transition-all ${
-              !solid && isSobre ? "brightness-0 invert" : ""
+              !solid && isDarkHero ? "brightness-0 invert" : ""
             }`}
           />
         </Link>
@@ -52,7 +57,7 @@ export default function Navbar() {
               key={l.to}
               to={l.to}
               className={`text-sm font-semibold transition-colors hover:text-flame-600 ${
-                !solid && isSobre ? "text-white/70" : "text-navy-900/70"
+                !solid && isDarkHero ? "text-white/70" : "text-navy-900/70"
               }`}
             >
               {l.label}
@@ -61,14 +66,30 @@ export default function Navbar() {
           <Link
             to="/sobre"
             className={`text-sm font-semibold transition-colors hover:text-flame-600 ${
-              isSobre && solid
+              path === "/sobre" && solid
                 ? "text-flame-600"
-                : isSobre
+                : path === "/sobre"
                   ? "text-flame-500"
-                  : "text-navy-900/70"
+                  : !solid && isDarkHero
+                    ? "text-white/70"
+                    : "text-navy-900/70"
             }`}
           >
             Sobre o criador
+          </Link>
+          <Link
+            to="/distribuidores"
+            className={`text-sm font-semibold transition-colors hover:text-flame-600 ${
+              path === "/distribuidores" && solid
+                ? "text-flame-600"
+                : path === "/distribuidores"
+                  ? "text-flame-500"
+                  : !solid && isDarkHero
+                    ? "text-white/70"
+                    : "text-navy-900/70"
+            }`}
+          >
+            Seja um distribuidor
           </Link>
         </nav>
 
@@ -82,7 +103,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className={`md:hidden ${!solid && isSobre ? "text-white" : "text-navy-900"}`}
+          className={`md:hidden ${!solid && isDarkHero ? "text-white" : "text-navy-900"}`}
           onClick={() => setOpen((o) => !o)}
           aria-label="Abrir menu"
         >
@@ -109,6 +130,14 @@ export default function Navbar() {
           >
             <UserRound className="h-4 w-4" />
             Sobre o criador
+          </Link>
+          <Link
+            to="/distribuidores"
+            onClick={() => setOpen(false)}
+            className="text-sm font-semibold text-flame-600 flex items-center gap-2"
+          >
+            <Building2 className="h-4 w-4" />
+            Seja um distribuidor
           </Link>
           <Button size="sm" asChild className="w-full">
             <Link to="/#download" onClick={() => setOpen(false)}>
