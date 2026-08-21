@@ -11,8 +11,11 @@ import {
   BarChart3,
   Bike,
   Package,
+  Package2,
+  Palette,
   ShieldCheck,
   Monitor,
+  Sparkles,
 } from "lucide-react";
 
 const WEB_ADMIN_URL = "https://rotta-carga-plus-web.netlify.app/login";
@@ -20,6 +23,11 @@ const WEB_ADMIN_URL_REGISTER =
   "https://rotta-carga-plus-web.netlify.app/register";
 
 const beneficios = [
+  {
+    icon: Sparkles,
+    title: "15 dias grátis no Plano Pro",
+    desc: "Comece testando todos os recursos do plano completo, sem cartão de crédito e sem compromisso.",
+  },
   {
     icon: LayoutDashboard,
     title: "Painel de gestão completo",
@@ -29,6 +37,16 @@ const beneficios = [
     icon: Bike,
     title: "Sua própria equipe de entrega",
     desc: "Cadastre e gerencie seus entregadores, acompanhe rotas e status de entrega em tempo real.",
+  },
+  {
+    icon: Package2,
+    title: "Modo atacado",
+    desc: "Configure preços e condições especiais para quem compra em maior volume, sem criar um catálogo separado.",
+  },
+  {
+    icon: Palette,
+    title: "Variações de produto",
+    desc: "Cadastre cor, tamanho ou modelo do mesmo item — o cliente escolhe a opção certa direto no pedido.",
   },
   {
     icon: Package,
@@ -89,6 +107,16 @@ export default function Distribuidores() {
             <h1 className="font-display font-extrabold text-3xl md:text-5xl text-white text-balance leading-[1.1]">
               Tem interesse em se tornar um distribuidor no RottaCarga+?
             </h1>
+
+            <div className="mt-6 inline-flex items-center gap-2.5 rounded-full bg-flame-500 pl-3 pr-4 py-1.5">
+              <span className="flex items-center justify-center h-6 w-6 rounded-full bg-white/20">
+                <Sparkles className="h-3.5 w-3.5 text-white" />
+              </span>
+              <span className="text-sm font-bold text-white">
+                Comece com 15 dias grátis no Plano Pro
+              </span>
+            </div>
+
             <p className="mt-6 text-white/60 text-lg leading-relaxed">
               Se você vende gás, água, ração, produtos de limpeza ou qualquer
               item pesado e volumoso, o RottaCarga+ coloca sua distribuidora na
