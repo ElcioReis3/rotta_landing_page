@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import Profiles from "@/components/Profiles";
+import Novidades from "@/components/Novidades";
 import ProductCategories from "@/components/ProductCategories";
 import CylinderSizes from "@/components/CylinderSizes";
 import AboutCTA from "@/components/AboutCTA";
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <HowItWorks />
       <Profiles />
+      <Novidades />
       <ProductCategories />
       <CylinderSizes />
       <AboutCTA />
