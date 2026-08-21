@@ -19,10 +19,4 @@ export const Steps = [
     title: "Receba sem esforço",
     desc: "O entregador chega até você e leva a carga até onde precisar. Confirme o recebimento direto no app.",
   },
-  {
-    n: "04",
-    icon: Wallet2,
-    title: "Crédito debitado automaticamente",
-    desc: "O valor é descontado do seu saldo de créditos — sem burocracia para o próximo pedido.",
-  },
 ];
