@@ -17,7 +17,7 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className="relative grid md:grid-cols-4 gap-10 md:gap-6">
+        <div className="relative grid md:grid-cols-3 gap-10 md:gap-6">
           {/* linha de rota conectando os passos, visível a partir de md */}
           <svg
             className="hidden md:block absolute top-9 left-0 w-full h-6 -z-10"
@@ -40,7 +40,7 @@ export default function HowItWorks() {
           {Steps.map((s, i) => (
             <div
               key={s.n}
-              className="relative flex flex-col items-start animate-rise"
+              className="relative flex flex-col items-center animate-rise"
               style={{ animationDelay: `${i * 120}ms` }}
             >
               <div className="relative h-[72px] w-[72px] rounded-2xl bg-navy-900 flex items-center justify-center mb-6 shadow-navy">
