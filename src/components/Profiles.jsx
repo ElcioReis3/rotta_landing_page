@@ -6,30 +6,47 @@ const profiles = [
     icon: User,
     title: "Para clientes",
     desc: "Peça o que for pesado ou volumoso sem sair de casa, acompanhe a entrega e pague do jeito mais fácil para você.",
-    items: ["Pedido em poucos toques", "Rastreamento em tempo real", "Histórico de pedidos e créditos"],
+    items: [
+      "Pedido em poucos toques, com preço sempre atualizado",
+      "Acompanhe o status da entrega em tempo real, direto no app",
+      "Programa de fidelidade e indicação com recompensas",
+    ],
   },
   {
     icon: Bike,
     title: "Para a equipe de entrega",
     desc: "Cada distribuidora tem sua própria equipe de entregadores, organizada dentro do app — sem frota externa ou autônomos avulsos.",
-    items: ["Rotas otimizadas", "Confirmação de entrega no app", "Acompanhamento de entregas do dia"],
+    items: [
+      "Navegação por rota dentro do próprio app",
+      "Rota otimizada com múltiplas entregas por vez",
+      "Confirmação de entrega por código, direto no app",
+    ],
   },
   {
     icon: Building2,
     title: "Para distribuidoras",
     desc: "Um painel administrativo próprio, whitelabel, para gerenciar produtos, clientes, rotas e a sua equipe de entregadores.",
-    items: ["Painel de gestão completo", "Controle da própria equipe de entrega", "Relatórios de vendas"],
+    items: [
+      "15 dias grátis no Plano Pro para começar",
+      "Modo atacado e variações de produto (cor, tamanho)",
+      "Relatórios de vendas e horário de atendimento flexível",
+    ],
   },
 ];
 
 export default function Profiles() {
   return (
-    <section id="perfis" className="py-24 md:py-32 bg-navy-900 relative overflow-hidden">
+    <section
+      id="perfis"
+      className="py-24 md:py-32 bg-navy-900 relative overflow-hidden"
+    >
       <div className="absolute top-0 right-0 h-80 w-80 rounded-full bg-flame-500/10 blur-3xl" />
 
       <div className="container relative">
         <div className="max-w-xl mx-auto text-center mb-16">
-          <Badge variant="light" className="mb-4">Para quem é</Badge>
+          <Badge variant="light" className="mb-4">
+            Para quem é
+          </Badge>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-white text-balance">
             Um app, três jeitos de fazer parte da rota
           </h2>
@@ -45,11 +62,18 @@ export default function Profiles() {
               <div className="h-12 w-12 rounded-xl bg-flame-500 flex items-center justify-center mb-6">
                 <p.icon className="h-6 w-6 text-white" />
               </div>
-              <h3 className="font-display font-bold text-xl text-white mb-3">{p.title}</h3>
-              <p className="text-sm text-white/60 leading-relaxed mb-6">{p.desc}</p>
+              <h3 className="font-display font-bold text-xl text-white mb-3">
+                {p.title}
+              </h3>
+              <p className="text-sm text-white/60 leading-relaxed mb-6">
+                {p.desc}
+              </p>
               <ul className="space-y-3">
                 {p.items.map((it) => (
-                  <li key={it} className="flex items-start gap-2.5 text-sm text-white/80">
+                  <li
+                    key={it}
+                    className="flex items-start gap-2.5 text-sm text-white/80"
+                  >
                     <Check className="h-4 w-4 text-flame-500 mt-0.5 shrink-0" />
                     {it}
                   </li>
