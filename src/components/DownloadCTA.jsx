@@ -76,7 +76,7 @@ export default function DownloadCTA() {
               className="w-full sm:w-auto text-base h-16 px-10"
             >
               <a
-                href="https://github.com/ElcioReis3/rotta-carga-plus-releases/releases/download/v.1.0.2/app-rotta-carga-plus.apk"
+                href="https://play.google.com/store/apps/details?id=com.rottacargaplus.app&pcampaignid=web_share"
                 download
               >
                 <Download className="h-5 w-5" />
@@ -85,7 +85,7 @@ export default function DownloadCTA() {
             </Button>
           </div>
           <p className="mt-4 text-xs text-white/40">
-            Versão 1.0 · Requer Android 8.0 ou superior
+            Versão 1.0.2 · Requer Android 8.0 ou superior
           </p>
 
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
