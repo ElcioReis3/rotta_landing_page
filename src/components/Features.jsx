@@ -15,6 +15,7 @@ import {
   Bell,
   PackageSearch,
   Truck,
+  Package2,
 } from "lucide-react";
 
 const features = [
@@ -57,6 +58,11 @@ const features = [
     icon: Truck,
     title: "Sem depender do seu carro",
     desc: "Chega de recusa de corrida por carga pesada ou suja. A entrega é feita por quem já é especialista em transportar volume.",
+  },
+  {
+    icon: Package2,
+    title: "Compra no atacado",
+    desc: "Comprou em volume? Distribuidoras com modo atacado liberam condição especial no mesmo pedido, sem precisar ligar para negociar.",
   },
 ];
 

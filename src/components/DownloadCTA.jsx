@@ -1,24 +1,17 @@
-import { Button } from "@/components/ui/button";
+import PlayStoreButton from "@/components/PlayStoreButton";
 import {
   Download,
   Smartphone,
   ShieldCheck,
   Zap,
-  Play,
   Apple,
   Monitor,
   Sparkles,
   Clock,
 } from "lucide-react";
-import appIcon from "@/assets/img/app-icon.png";
 import appIconDark from "@/assets/img/app-icon-dark.png";
 
 const comingSoon = [
-  {
-    icon: Play,
-    title: "Google Play Store",
-    desc: "Instalação e atualizações automáticas direto da loja oficial do Android.",
-  },
   {
     icon: Apple,
     title: "Apple App Store",
@@ -26,8 +19,8 @@ const comingSoon = [
   },
   {
     icon: Monitor,
-    title: "Versão desktop para administradores",
-    desc: "Painel para computador, pensado para distribuidoras gerenciarem pedidos, equipe e relatórios em tela grande.",
+    title: "App desktop para administradores",
+    desc: "Aplicativo instalável para Windows, além do painel web que já funciona hoje no navegador.",
   },
 ];
 
@@ -65,27 +58,19 @@ export default function DownloadCTA() {
             Baixe agora e nunca mais carregue peso sozinho
           </h2>
           <p className="mt-5 text-white/60 text-lg leading-relaxed">
-            RottaCarga+ | Nós levamos o peso por você. Gratuito, rápido de
-            instalar e pronto para usar. Disponível para dispositivos Android.
+            RottaCarga+ | Nós levamos o peso por você. Gratuito, instalação
+            direto da Google Play e pronto para usar em minutos.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              asChild
-              className="w-full sm:w-auto text-base h-16 px-10"
-            >
-              <a
-                href="https://play.google.com/store/apps/details?id=com.rottacargaplus.app&pcampaignid=web_share"
-                download
-              >
-                <Download className="h-5 w-5" />
-                Baixar APK — Android
-              </a>
-            </Button>
+            <PlayStoreButton size="lg" className="w-full sm:w-auto text-base h-16 px-10">
+              <Download className="h-5 w-5" />
+              Baixar na Google Play
+            </PlayStoreButton>
           </div>
           <p className="mt-4 text-xs text-white/40">
-            Versão 1.0.2 · Requer Android 8.0 ou superior
+            Gratuito · Android 8.0 ou superior · Atualizações automáticas pela
+            loja
           </p>
 
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
@@ -105,7 +90,7 @@ export default function DownloadCTA() {
               <div>
                 <p className="text-sm font-bold text-white">Seguro</p>
                 <p className="text-xs text-white/50 mt-1">
-                  Pagamentos e dados protegidos de ponta a ponta.
+                  Publicado na loja oficial, com pagamentos e dados protegidos.
                 </p>
               </div>
             </div>
@@ -142,7 +127,7 @@ export default function DownloadCTA() {
               </span>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               {comingSoon.map((c, i) => (
                 <div
                   key={c.title}
@@ -164,9 +149,9 @@ export default function DownloadCTA() {
             </div>
 
             <p className="mt-6 text-xs text-white/40 leading-relaxed">
-              Enquanto isso, o APK acima já entrega a experiência completa do
-              app no Android. Quem instalar agora recebe as atualizações assim
-              que as novas versões forem publicadas.
+              A versão Android já está publicada na Google Play com a
+              experiência completa do app. Quem instalar agora recebe as
+              próximas atualizações automaticamente pela loja.
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Download, Star, MapPin } from "lucide-react";
-import appIcon from "@/assets/img/app-icon.png";
+import PlayStoreButton from "@/components/PlayStoreButton";
+import { Download, ShieldCheck, MapPin } from "lucide-react";
 import appIconDark from "@/assets/img/app-icon-dark.png";
 
 export default function Hero() {
@@ -53,12 +53,10 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">
-            <Button size="lg" asChild className="w-full sm:w-auto">
-              <a href="#download">
-                <Download className="h-5 w-5" />
-                Baixar o app agora
-              </a>
-            </Button>
+            <PlayStoreButton size="lg" className="w-full sm:w-auto">
+              <Download className="h-5 w-5" />
+              Baixar o app agora
+            </PlayStoreButton>
             <Button
               size="lg"
               variant="outline"
@@ -70,15 +68,9 @@ export default function Hero() {
           </div>
 
           <div className="mt-10 flex items-center gap-6 text-white/70">
-            <div className="flex items-center gap-1.5">
-              <Star className="h-4 w-4 fill-flame-500 text-flame-500" />
-              <Star className="h-4 w-4 fill-flame-500 text-flame-500" />
-              <Star className="h-4 w-4 fill-flame-500 text-flame-500" />
-              <Star className="h-4 w-4 fill-flame-500 text-flame-500" />
-              <Star className="h-4 w-4 fill-flame-500 text-flame-500" />
-              <span className="ml-2 text-sm font-semibold">
-                4.9 de avaliação
-              </span>
+            <div className="flex items-center gap-1.5 text-sm font-semibold">
+              <ShieldCheck className="h-4 w-4 text-flame-500" />
+              Disponível na Google Play
             </div>
             <div className="h-4 w-px bg-white/15" />
             <div className="flex items-center gap-1.5 text-sm font-semibold">

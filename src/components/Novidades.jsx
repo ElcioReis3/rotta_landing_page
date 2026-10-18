@@ -10,6 +10,8 @@ import {
   Sparkles,
   Package2,
   CalendarClock,
+  Store,
+  Wallet,
   User,
   Bike,
   Building2,
@@ -67,14 +69,19 @@ const grupos = [
     color: "text-flame-500",
     items: [
       {
-        icon: Sparkles,
-        title: "15 dias grátis no Plano Pro",
-        desc: "Comece testando todos os recursos, sem cartão de crédito e sem compromisso.",
+        icon: Store,
+        title: "PDV de balcão",
+        desc: "Registre a venda presencial no caixa: busca de produto, desconto, troco e comprovante, com baixa automática do estoque.",
       },
       {
         icon: Package2,
-        title: "Modo atacado",
-        desc: "Configure preços e condições especiais para clientes que compram em maior volume.",
+        title: "Modo atacado com aprovação",
+        desc: "Defina pedido mínimo por valor, volume ou variedade — e aprove, recuse ou faça contra-proposta antes de fechar.",
+      },
+      {
+        icon: Wallet,
+        title: "Financeiro integrado",
+        desc: "Entregas e vendas de balcão entram no mesmo caixa, separadas por forma de pagamento.",
       },
       {
         icon: CalendarClock,

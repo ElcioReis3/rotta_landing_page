@@ -25,11 +25,12 @@ const profiles = [
   {
     icon: Building2,
     title: "Para distribuidoras",
-    desc: "Um painel administrativo próprio, whitelabel, para gerenciar produtos, clientes, rotas e a sua equipe de entregadores.",
+    desc: "Um painel administrativo próprio, whitelabel, para gerenciar produtos, clientes, rotas, vendas de balcão e a sua equipe de entregadores.",
     items: [
       "15 dias grátis no Plano Pro para começar",
-      "Modo atacado e variações de produto (cor, tamanho)",
-      "Relatórios de vendas e horário de atendimento flexível",
+      "PDV de balcão: venda presencial com baixa de estoque na hora",
+      "Modo atacado com pedido mínimo e aprovação antes de fechar",
+      "Financeiro, relatórios e controle de estoque no mesmo painel",
     ],
   },
 ];
